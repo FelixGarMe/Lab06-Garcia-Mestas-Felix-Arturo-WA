@@ -1,0 +1,128 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='estilos.css')
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #007bff;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      section {
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      img.sobre-mi-imagen {
+        max-width: 100%;
+        height: auto;
+      }
+      footer {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+      .boton-contacto {
+        background-color: #ff5722;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+  body
+    header
+      h1 Mi Portafolio
+      nav
+        ul
+          li
+            a(href='#inicio') Inicio
+          li
+            a(href='#sobre-mi') Sobre Mí
+          li
+            a(href='#experiencia') Experiencia Laboral
+          li
+            a(href='#educacion') Educación
+          li
+            a(href='#habilidades') Habilidades
+          li
+            a(href='#proyectos') Proyectos
+          li
+            a(href='contacto.html') Contáctame
+    section#inicio
+      h2 Inicio
+      p Hola, ¿qué tal? Soy Felix Arturo Garcia Mestas y te doy la bienvenida a mi portafolio en línea. Aquí encontrarás información sobre mí, mis habilidades y proyectos. ¡Espero que disfrutes explorando mi perfil!
+    section#sobre-mi
+      h2 Sobre Mí
+      .sobre-mi-container
+        img.sobre-mi-imagen(src='yo.png', alt='Felix Arturo Garcia Mestas')
+        .sobre-mi-informacion
+          p Nombre completo: Felix Arturo Garcia Mestas
+          p Fecha de nacimiento: 12 de julio de 2004
+          p Edad: 18 años
+          p DNI: 73639471
+          p Dirección: Av. Fernandini 123, Sachaca, Arequipa
+          p Idiomas:
+          ul
+            li Español: nativo
+            li Inglés: nivel intermedio
+            li Mandarín: nivel básico
+    section#experiencia
+      h2 Experiencia Laboral
+      ul
+        li Experiencia en reparación y formateo de computadoras
+        li Trabajos en proyectos web
+    section#educacion
+      h2 Educación
+      p Educación secundaria completada (2020)
+      p Curso básico en Cisco en redes (2021)
+    section#habilidades
+      h2 Habilidades
+      ul
+        li Habilidades en comunicación efectiva y trabajo en equipo
+        li Capacidad para aprender rápidamente nuevas tareas y adaptarme a diferentes entornos laborales
+        li Excelentes habilidades organizativas y de gestión del tiempo
+        li Conocimientos en lenguajes de programación:
+        ul
+          li Java
+          li Python
+          li VBS (Visual Basic Scripting)
+          li HTML
+          li CSS
+    section#proyectos
+      h2 Proyectos
+      iframe(width='560', height='315', src='https://www.youtube.com/embed/mbh4Vv7LJQM?si=MeF_-LczdaLR93Yl', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share', allowfullscreen)
+      br
+      iframe(width='560', height='315', src='https://www.youtube.com/embed/9NeA1mLyTZk?si=BaXxkEkStRqYP5KP', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share', allowfullscreen)
+      br
+      iframe(width='560', height='315', src='https://www.youtube.com/embed/eHO7ns5QNOk?si=2JrGsA-9cMcxV6-H', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share', allowfullscreen)
+    footer
+      p ¿Deseas contactarme?
+      a.boton-contacto(href='contacto.html') Contáctame
